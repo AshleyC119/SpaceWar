@@ -1,0 +1,82 @@
+/* SpaceWar: Ultimate Edition - Main Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a0f2e 100%);
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+canvas {
+    border: 4px solid #00ff00;
+    background-color: #000;
+    display: block;
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.5), inset 0 0 20px rgba(0, 255, 0, 0.1);
+}
+
+#info {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#status {
+    font-weight: bold;
+    color: #ffff00;
+    font-size: 16px;
+}
+
+.connected #status {
+    color: #00ff00;
+}
+
+.controls {
+    text-align: center;
+    font-size: 11px;
+    color: #00ff00;
+    opacity: 0.8;
+    max-width: 800px;
+}
+
+#stats {
+    font-size: 12px;
+    text-align: center;
+    color: #00ff00;
+    opacity: 0.8;
+}
+
+h1 {
+    color: #ffff00;
+    font-size: 28px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ffff00;
+}
+
+.controls p {
+    margin: 0;
+}
+
+.controls p:last-child {
+    color: #ffaa00;
+    margin-top: 5px;
+}
+
+#stats p {
+    margin-top: 10px;
+}

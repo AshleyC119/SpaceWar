@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚔ SPACEWAR: ULTIMATE EDITION ⚔</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>⚔ 星球大战：终极版 ⚔</h1>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="info">
+            <div id="status">🚀 连接中...</div>
+            <div class="controls" style="margin-top: 10px;">
+                <p><strong>🎮 控制：</strong> W/↑ 推进 | A/← 左转 | D/→ 右转 | 空格 射击 | E 终极技能</p>
+                <p><strong>⚠️ 3条生命 | 能量提升 | 洛伦兹区 | 史诗战斗！</strong></p>
+            </div>
+            <div id="stats">
+                <p>计时: <span id="tickCount">0</span> | 玩家: <span id="playerCount">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load game modules in dependency order -->
+    <script src="/static/particles.js"></script>
+    <script src="/static/renderer.js"></script>
+    <script src="/static/game.js"></script>
+</body>
+</html>
